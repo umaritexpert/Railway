@@ -11,61 +11,51 @@
 <body>
     <script>
 
+        const checkfareValid = (fare) => {
+            if (fare > '3000') {
+                discount = (10 / 100 * fare);
+                totalFare = fare - discount;
+                alert('Fare = ' + fare + '\nDiscount = ' + discount + '\nTotal Fare = ' + totalFare);
+            } else {
+                alert('Fare = ' + fare);
+            }
+
+        }
+
         const checkdestination1Valid = (destination) => {
             classType = prompt('Select Your ClassType\n 1. Business Class : 400 \n 2. Lower AC : 350 \n 3. Economy : 200');
             switch (classType) {
                 case '1': {
                     seats = parseInt(prompt('How Much Seats You Want To Book'));
                     if (seats >= 1 && seats <= 10) {
-                        ((fare = (500 + 400) * seats));
-                        if (fare > '3000') {
-                            (discount = (10 / 100 * fare));
-                            (totalFare = fare - discount);
-                            alert('Fare = ' + fare + '\nDiscount = ' + discount + '\nTotal Fare = ' + totalFare);
-                        } else {
-                            alert('Fare = ' + fare);
-                        }
+                        fare = (500 + 400) * seats;
+                        checkfareValid(fare);
                     }
                     else {
                         alert('Please Select Valid Seats\nMinimum Seats = 1 \nMaximum Seats = 10');
                     }
-
                     break;
                 }
                 case '2': {
                     seats = prompt('How Much Seats You Want To Book');
                     if (seats >= 1 && seats <= 10) {
-                        ((fare = (500 + 350) * seats));
-                        if (fare > '3000') {
-                            (discount = (10 / 100 * fare));
-                            (totalFare = fare - discount);
-                            alert('Fare = ' + fare + '\nDiscount = ' + discount + '\nTotal Fare = ' + totalFare);
-                        } else {
-                            alert('Fare = ' + fare);
-                        }
+                        fare = (500 + 350) * seats;
+                        checkfareValid(fare);
                     }
                     else {
                         alert('Please Select Valid Seats\nMinimum Seats = 1 \nMaximum Seats = 10');
                     }
-
                     break;
                 }
                 case '3': {
                     seats = prompt('How Much Seats You Want To Book');
                     if (seats >= 1 && seats <= 10) {
-                        ((fare = (500 + 200) * seats));
-                        if (fare > '3000') {
-                            (discount = (10 / 100 * fare));
-                            (totalFare = fare - discount);
-                            alert('Fare = ' + fare + '\nDiscount = ' + discount + '\nTotal Fare = ' + totalFare);
-                        } else {
-                            alert('Fare = ' + fare);
-                        }
+                        fare = (500 + 200) * seats;
+                        checkfareValid(fare);
                     }
                     else {
                         alert('Please Select Valid Seats\nMinimum Seats = 1 \nMaximum Seats = 10');
                     }
-
                     break;
                 }
                 default: {
@@ -82,55 +72,34 @@
                 case '1': {
                     seats = prompt('How Much Seats You Want To Book')
                     if (seats >= 1 && seats <= 10) {
-                        ((fare = (800 + 400) * seats));
-                        if (fare > '3000') {
-                            (discount = (10 / 100 * fare));
-                            (totalFare = fare - discount);
-                            alert('Fare = ' + fare + '\nDiscount = ' + discount + '\nTotal Fare = ' + totalFare);
-                        } else {
-                            alert('Fare = ' + fare);
-                        }
+                        fare = (800 + 400) * seats;
+                        checkfareValid(fare);
                     }
                     else {
                         alert('Please Select Valid Seats\nMinimum Seats = 1 \nMaximum Seats = 10');
                     }
-
                     break;
                 }
                 case '2': {
                     seats = prompt('How Much Seats You Want To Book')
                     if (seats >= 1 && seats <= 10) {
-                        ((fare = (800 + 350) * seats));
-                        if (fare > '3000') {
-                            (discount = (10 / 100 * fare));
-                            (totalFare = fare - discount);
-                            alert('Fare = ' + fare + '\nDiscount = ' + discount + '\nTotal Fare = ' + totalFare);
-                        } else {
-                            alert('Fare = ' + fare);
-                        }
+                        fare = (800 + 350) * seats;
+                        checkfareValid(fare);
                     }
                     else {
                         alert('Please Select Valid Seats\nMinimum Seats = 1 \nMaximum Seats = 10');
                     }
-
                     break;
                 }
                 case '3': {
                     seats = prompt('How Much Seats You Want To Book')
                     if (seats >= 1 && seats <= 10) {
-                        ((fare = (800 + 200) * seats));
-                        if (fare > '3000') {
-                            (discount = (10 / 100 * fare));
-                            (totalFare = fare - discount);
-                            alert('Fare = ' + fare + '\nDiscount = ' + discount + '\nTotal Fare = ' + totalFare);
-                        } else {
-                            alert('Fare = ' + fare);
-                        }
+                        fare = (800 + 200) * seats;
+                        checkfareValid(fare);
                     }
                     else {
                         alert('Please Select Valid Seats\nMinimum Seats = 1 \nMaximum Seats = 10');
                     }
-
                     break;
                 }
                 default: {
@@ -147,55 +116,34 @@
                 case '1': {
                     seats = prompt('How Much Seats You Want To Book')
                     if (seats >= 1 && seats <= 10) {
-                        ((fare = (1200 + 400) * seats));
-                        if (fare > '3000') {
-                            (discount = (10 / 100 * fare));
-                            (totalFare = fare - discount);
-                            alert('Fare = ' + fare + '\nDiscount = ' + discount + '\nTotal Fare = ' + totalFare);
-                        } else {
-                            alert('Fare = ' + fare);
-                        }
+                        fare = (1200 + 400) * seats;
+                        checkfareValid(fare);
                     }
                     else {
                         alert('Please Select Valid Seats\nMinimum Seats = 1 \nMaximum Seats = 10');
                     }
-
                     break;
                 }
                 case '2': {
                     seats = prompt('How Much Seats You Want To Book')
                     if (seats >= 1 && seats <= 10) {
-                        ((fare = (1200 + 350) * seats));
-                        if (fare > '3000') {
-                            (discount = (10 / 100 * fare));
-                            (totalFare = fare - discount);
-                            alert('Fare = ' + fare + '\nDiscount = ' + discount + '\nTotal Fare = ' + totalFare);
-                        } else {
-                            alert('Fare = ' + fare);
-                        }
+                        fare = (1200 + 350) * seats;
+                        checkfareValid(fare);
                     }
                     else {
                         alert('Please Select Valid Seats\nMinimum Seats = 1 \nMaximum Seats = 10');
                     }
-
                     break;
                 }
                 case '3': {
                     seats = prompt('How Much Seats You Want To Book')
                     if (seats >= 1 && seats <= 10) {
-                        ((fare = (1200 + 200) * seats));
-                        if (fare > '3000') {
-                            (discount = (10 / 100 * fare));
-                            (totalFare = fare - discount);
-                            alert('Fare = ' + fare + '\nDiscount = ' + discount + '\nTotal Fare = ' + totalFare);
-                        } else {
-                            alert('Fare = ' + fare);
-                        }
+                        fare = (1200 + 200) * seats;
+                        checkfareValid(fare);
                     }
                     else {
                         alert('Please Select Valid Seats\nMinimum Seats = 1 \nMaximum Seats = 10');
                     }
-
                     break;
                 }
                 default: {
