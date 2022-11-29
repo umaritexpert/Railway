@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Reservation Service</title>
+</head>
+
+<body>
+    <script>
+
+        const checkdestination1Valid = (destination) => {
+            classType = prompt('Select Your ClassType\n 1. Business Class : 400 \n 2. Lower AC : 350 \n 3. Economy : 200');
+            switch (classType) {
+                case '1': {
+                    seats = parseInt(prompt('How Much Seats You Want To Book'));
+                    if (seats >= 1 && seats <= 10) {
+                        ((fare = (500 + 400) * seats));
+                        if (fare > '3000') {
+                            (discount = (10 / 100 * fare));
+                            (totalFare = fare - discount);
+                            alert('Fare = ' + fare + '\nDiscount = ' + discount + '\nTotal Fare = ' + totalFare);
+                        } else {
+                            alert('Fare = ' + fare);
+                        }
+                    }
+                    else {
+                        alert('Please Select Valid Seats\nMinimum Seats = 1 \nMaximum Seats = 10');
+                    }
+
+                    break;
+                }
+                case '2': {
+                    seats = prompt('How Much Seats You Want To Book');
+                    if (seats >= 1 && seats <= 10) {
+                        ((fare = (500 + 350) * seats));
+                        if (fare > '3000') {
+                            (discount = (10 / 100 * fare));
+                            (totalFare = fare - discount);
+                            alert('Fare = ' + fare + '\nDiscount = ' + discount + '\nTotal Fare = ' + totalFare);
+                        } else {
+                            alert('Fare = ' + fare);
+                        }
+                    }
+                    else {
+                        alert('Please Select Valid Seats\nMinimum Seats = 1 \nMaximum Seats = 10');
+                    }
+
+                    break;
+                }
+                case '3': {
+                    seats = prompt('How Much Seats You Want To Book');
+                    if (seats >= 1 && seats <= 10) {
+                        ((fare = (500 + 200) * seats));
+                        if (fare > '3000') {
+                            (discount = (10 / 100 * fare));
+                            (totalFare = fare - discount);
+                            alert('Fare = ' + fare + '\nDiscount = ' + discount + '\nTotal Fare = ' + totalFare);
+                        } else {
+                            alert('Fare = ' + fare);
+                        }
+                    }
+                    else {
+                        alert('Please Select Valid Seats\nMinimum Seats = 1 \nMaximum Seats = 10');
+                    }
+
+                    break;
+                }
+                default: {
+                    alert('Please Select Valid ClassType');
+                    break;
+                }
+            }
+
+        }
+
+        const checkdestination2Valid = (destination) => {
+            classType = prompt('Select Your ClassType\n 1. Business Class : 400 \n 2. Lower AC : 350 \n 3. Economy : 200')
+            switch (classType) {
+                case '1': {
+                    seats = prompt('How Much Seats You Want To Book')
+                    if (seats >= 1 && seats <= 10) {
+                        ((fare = (800 + 400) * seats));
+                        if (fare > '3000') {
+                            (discount = (10 / 100 * fare));
+                            (totalFare = fare - discount);
+                            alert('Fare = ' + fare + '\nDiscount = ' + discount + '\nTotal Fare = ' + totalFare);
+                        } else {
+                            alert('Fare = ' + fare);
+                        }
+                    }
+                    else {
+                        alert('Please Select Valid Seats\nMinimum Seats = 1 \nMaximum Seats = 10');
+                    }
+
+                    break;
+                }
+                case '2': {
+                    seats = prompt('How Much Seats You Want To Book')
+                    if (seats >= 1 && seats <= 10) {
+                        ((fare = (800 + 350) * seats));
+                        if (fare > '3000') {
+                            (discount = (10 / 100 * fare));
+                            (totalFare = fare - discount);
+                            alert('Fare = ' + fare + '\nDiscount = ' + discount + '\nTotal Fare = ' + totalFare);
+                        } else {
+                            alert('Fare = ' + fare);
+                        }
+                    }
+                    else {
+                        alert('Please Select Valid Seats\nMinimum Seats = 1 \nMaximum Seats = 10');
+                    }
+
+                    break;
+                }
+                case '3': {
+                    seats = prompt('How Much Seats You Want To Book')
+                    if (seats >= 1 && seats <= 10) {
+                        ((fare = (800 + 200) * seats));
+                        if (fare > '3000') {
+                            (discount = (10 / 100 * fare));
+                            (totalFare = fare - discount);
+                            alert('Fare = ' + fare + '\nDiscount = ' + discount + '\nTotal Fare = ' + totalFare);
+                        } else {
+                            alert('Fare = ' + fare);
+                        }
+                    }
+                    else {
+                        alert('Please Select Valid Seats\nMinimum Seats = 1 \nMaximum Seats = 10');
+                    }
+
+                    break;
+                }
+                default: {
+                    alert('Please Select Valid ClassType')
+                    break;
+                }
+            }
+
+        }
+
+        const checkdestination3Valid = (destination) => {
+            classType = prompt('Select Your ClassType\n 1. Business Class : 400 \n 2. Lower AC : 350 \n 3. Economy : 200')
+            switch (classType) {
+                case '1': {
+                    seats = prompt('How Much Seats You Want To Book')
+                    if (seats >= 1 && seats <= 10) {
+                        ((fare = (1200 + 400) * seats));
+                        if (fare > '3000') {
+                            (discount = (10 / 100 * fare));
+                            (totalFare = fare - discount);
+                            alert('Fare = ' + fare + '\nDiscount = ' + discount + '\nTotal Fare = ' + totalFare);
+                        } else {
+                            alert('Fare = ' + fare);
+                        }
+                    }
+                    else {
+                        alert('Please Select Valid Seats\nMinimum Seats = 1 \nMaximum Seats = 10');
+                    }
+
+                    break;
+                }
+                case '2': {
+                    seats = prompt('How Much Seats You Want To Book')
+                    if (seats >= 1 && seats <= 10) {
+                        ((fare = (1200 + 350) * seats));
+                        if (fare > '3000') {
+                            (discount = (10 / 100 * fare));
+                            (totalFare = fare - discount);
+                            alert('Fare = ' + fare + '\nDiscount = ' + discount + '\nTotal Fare = ' + totalFare);
+                        } else {
+                            alert('Fare = ' + fare);
+                        }
+                    }
+                    else {
+                        alert('Please Select Valid Seats\nMinimum Seats = 1 \nMaximum Seats = 10');
+                    }
+
+                    break;
+                }
+                case '3': {
+                    seats = prompt('How Much Seats You Want To Book')
+                    if (seats >= 1 && seats <= 10) {
+                        ((fare = (1200 + 200) * seats));
+                        if (fare > '3000') {
+                            (discount = (10 / 100 * fare));
+                            (totalFare = fare - discount);
+                            alert('Fare = ' + fare + '\nDiscount = ' + discount + '\nTotal Fare = ' + totalFare);
+                        } else {
+                            alert('Fare = ' + fare);
+                        }
+                    }
+                    else {
+                        alert('Please Select Valid Seats\nMinimum Seats = 1 \nMaximum Seats = 10');
+                    }
+
+                    break;
+                }
+                default: {
+                    alert('Please Select Valid ClassType')
+                    break;
+                }
+            }
+
+        }
+
+
+        let destination;
+        let classType;
+        let seats;
+        let fare;
+        let discount;
+        let totalFare;
+
+        destination = prompt('Select Your Destination \n 1. LHR : 500 \n 2. FSD : 800 \n 3. KHI : 1200');
+        if (destination === '1') {
+            checkdestination1Valid(destination);
+        }
+        else if (destination === '2') {
+            checkdestination2Valid(destination);
+        }
+        else if (destination === '3') {
+            checkdestination3Valid(destination);
+        }
+        else {
+            alert('Please Select Valid Destination')
+        }
+
+    </script>
+</body>
+
+</html>
